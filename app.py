@@ -1,3 +1,5 @@
+
+You said:
 from gradio_client import Client
 import gradio as gr
 
@@ -56,8 +58,7 @@ video_gen_interface = gr.Interface(
         gr.File(label="Download GIF"),
         gr.Number(label="Seed Used for Video Generation")
     ],
-    title="Pettah AI: VideoGenX",
-    description="This project is developed by Seja Menath, powered by Pettah AI. It is a Sri Lankan company with long-standing experience, providing users with an easy way to generate AI videos for free."
+    title="Pettah AI: VideoGenX-beta"
 )
 
 def enhance_interface(prompt):
@@ -68,8 +69,7 @@ enhance_prompt_interface = gr.Interface(
     fn=enhance_interface,
     inputs=gr.Textbox(lines=2, placeholder="Enter your prompt here..."),
     outputs=gr.Textbox(lines=2),
-    title="Enhance Prompt with CogVideoX-5B",
-    description="Developed by Seja Menath and powered by Pettah AI, this tool enhances your prompts for generating AI videos. Free to use and easy to navigate, it provides a seamless experience for users looking to improve their video generation prompts."
+    title="Enhance Prompt with Pettahai-VideGenX"
 )
 
 if __name__ == "__main__":
